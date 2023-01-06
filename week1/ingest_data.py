@@ -25,9 +25,7 @@ def run_cmd(cmd: str, timeout=None):
                 f"Command <<{proc.args}>> failed.\nReturn Code: {proc.returncode}.\nError Message: {proc.stderr}\n")
             exit()
         else:
-            print(
-                f"Command <<{proc.args}>> failed.\nReturn Code: {proc.returncode}.\nError Message: {proc.stderr}\n")
-            exit()
+            pass
     except Exception as e:
         print(f"Command {cmd} failed with error: ", e)
         exit()
