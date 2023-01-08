@@ -15,7 +15,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-095a2ffdd817c7a67"
+  ami           = "ami-066866b740d9ce5a7"
   instance_type = "t2.micro"
   tags = {
     Name = "Example ec2 machine with terraform"
