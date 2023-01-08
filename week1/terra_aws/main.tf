@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "eu-central-1"
+  region  = "eu-central-1"
   profile = "default-adachypay"
 }
 
@@ -18,6 +18,6 @@ resource "aws_instance" "app_server" {
   ami           = "ami-066866b740d9ce5a7"
   instance_type = "t2.micro"
   tags = {
-    Name = "Example ec2 machine with terraform"
+    Name = var.instance_name
   }
 }
