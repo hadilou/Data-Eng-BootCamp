@@ -5,4 +5,9 @@ ny_taxi_postgres_data/
 
 dtc-de-374118-c1c92f5f1984.json
 
-week1/terra_aws/.terraform/
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
